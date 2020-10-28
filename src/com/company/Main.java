@@ -8,49 +8,49 @@ public class Main {
 
 
         Random rand = new Random();
-        int int_random;
+        int randomMonth;
         do
-            int_random = rand.nextInt(13);
-        while(int_random == 0);
+            randomMonth = rand.nextInt(13);
+        while(randomMonth == 0);
 
 
-        int month = int_random;
+        int month = randomMonth;
 
         if (month == 12 || month <= 2) {
-            System.out.println("Зима_" + int_random);
+            System.out.println("Зима_" + randomMonth);
         } else if (month >= 3 && month <= 5) {
-            System.out.println("Весна_" + int_random);
+            System.out.println("Весна_" + randomMonth);
         } else if (month >= 6 && month <= 8) {
-            System.out.println("Лето_" + int_random);
+            System.out.println("Лето_" + randomMonth);
         } else {
-            System.out.println("Осень_" + int_random);
+            System.out.println("Осень_" + randomMonth);
         }
 
 
 
-        switch (int_random) {
+        switch (randomMonth) {
             case 1:
             case 2:
             case 12:
-                System.out.println("Зима" + " " + int_random);
+                System.out.println("Зима" + " " + randomMonth);
                 break;
             case 3:
             case 4:
             case 5:
-                System.out.println("Весна" + " " + int_random);
+                System.out.println("Весна" + " " + randomMonth);
                 break;
             case 6:
             case 7:
             case 8:
-                System.out.println("Лето" + " " + int_random);
+                System.out.println("Лето" + " " + randomMonth);
                 break;
             case 9:
             case 10:
             case 11:
-                System.out.println("Осень" + " " + int_random);
+                System.out.println("Осень" + " " + randomMonth);
                 break;
             default:
-                throw new IllegalStateException("Unexpected value: " + int_random);
+                throw new IllegalStateException("Unexpected value: " + randomMonth);
         }
 
 
